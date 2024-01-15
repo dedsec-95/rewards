@@ -15,9 +15,7 @@ public class RewardsConverter {
             return;
         }
 
-        // Assuming you have a conversion rate, you can pass it to the RewardValue constructor
-        double conversionRate = 0.1; // replace with the actual conversion rate
-        var rewardsValue = new RewardValue(conversionRate, cashValue);
+        var rewardsValue = new RewardValue(cashValue);
 
         System.out.println("Converting $" + input_value + " to miles");
         System.out.println("$" + input_value + " is worth " + rewardsValue.getMilesValue() + " miles");
